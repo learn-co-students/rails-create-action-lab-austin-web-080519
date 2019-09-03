@@ -1,5 +1,15 @@
+<h1> WELCOME </h1>
+<h3> List of Students </h3>
+
+<br>
 <div>
   <% @students.each do |student| %>
     <div><%= link_to student.to_s, student_path(student) %></div>
   <% end %>
+</div>
+
+<div>
+
+<%= link_to "New Student", new_student_path %>
+
 </div>
